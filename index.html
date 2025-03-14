@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Ajaib</title>
+
+    <!-- FontAwesome (CDN Resmi) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0062ff;
+            --secondary-color: #0047b3;
+            --bg-color: linear-gradient(to bottom, #e6f0ff, #cce0ff);
+            --text-color: #0a2540;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-y: hidden;
+        }
+
+        .container {
+            height: 300px;
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 98, 255, 0.2);
+            border: 2px solid var(--primary-color);
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 200px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            width: 202px;
+            margin-right: 10px;
+        }
+
+        .header {
+            font-size: 18px;
+            font-weight: 600;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header i {
+            margin-right: 8px;
+        }
+
+        .message {
+            font-size: 15px;
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(0, 98, 255, 0.1);
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .info {
+            font-size: 14px;
+            margin: 15px 0;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .button.phone {
+            background: linear-gradient(90deg, #0047b3, #0062ff);
+            margin-top: 50px;
+        }
+
+        .button.whatsapp {
+            background: linear-gradient(90deg, #20c659, #25D366);
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 98, 255, 0.4);
+        }
+
+        .footer {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://media-hosting.imagekit.io//da6b1d7a68344d00/cropped-new_ajaib_logo-1.png?Expires=1836502105&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=TLpQkOVtQ-1~8Uws6sk32ftJoRAIpPXik1aiNJ9kT9csDZVwv58hPfFrKsnDk5Vvv-q0cpDg9ysaLgMa~gr9KOwiG3jz8vyGvewvfdtBzC181nhJfidzN5s7aFDszwSH~TVvhTb0gXMu8lu~VJjdUy4RXs15QAjUhmX6RYXrJds1n1eKqQhLPRmnrkpcjZtINg6k9jJGlipXcZAiUJ~1yVN5lNqhSXdyn63uuX0LigNfwL9UtoXvm2XrBnj8yAptKdj55tQweyroZc5HaKv2KhDQtgs1Gx-AEUnon3U-VTCIkjZnlxOUOSGIjvrutR6sIbfnijgSrbXajoZ6jNSsdQ__">
+            
+        </div>
+        <div class="header"><i class="fas fa-bullhorn"></i> Pengumuman</div>
+        <div class="message">
+            <i class="fas fa-info-circle"></i> Kami siap membantu Anda! Pilih salah satu layanan berikut.
+        </div>
+
+        <!-- Teks penjelasan tambahan -->
+        <div class="info">
+            Anda dapat menghubungi Ajaib melalui WhatsApp atau telepon dengan menekan tombol di bawah ini.
+        </div>
+
+        <!-- Tombol Telepon -->
+        <a href="tel:+62123456789" class="button phone">
+            <i class="fas fa-phone-alt"></i> ➡ Telepon Ajaib Investasi
+        </a>
+        
+        <!-- Tombol WhatsApp -->
+        <a href="https://wa.me/62123456789" class="button whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> ➡ Live Chat Ajaib Investasi
+        </a>
+
+        <div class="footer">© 2025 Ajaib. Semua Hak Dilindungi.</div>
+    </div>
+
+</body>
+</html>
